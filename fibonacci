@@ -1,0 +1,17 @@
+nfterms= int(input("how many terms"))
+n1=0
+n2=1
+count=0
+if nfterms<=0:
+  print(" enter a positive number")
+elseif nfterms == 1:
+  print(" Fibonacci sequence upto ", nfterms,";")
+  print(n1)
+else:
+  print("Fibonacci sequence: ")
+  while count<nfterms:
+   print(n1)
+   nth=n1+n2
+   n1=n2
+   n2=nth
+   count+=1
